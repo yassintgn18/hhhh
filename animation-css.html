@@ -1,6 +1,66 @@
 <doctype html>
 <html>
     <head>
+        <style>#box {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(255, 0, 0);
+            font-size: 250PX;
+            text-align: center;
+            animation: 5s linear 0s infinite myslide;
+        }
+        
+        
+        /*
+        #box:hover {
+            animation: 2s linear 0s infinite running myrotate;
+        }*/
+        
+        
+        @keyframes myslide{
+            from{margin-left: 0%;}
+            to{margin-left: 100%;}
+        }
+        
+        
+        @keyframes myrotate{
+            /*100%{transform: rotateX(360deg)}
+            100%{transform: rotatey(360deg)}*/
+            100%{transform: rotatex(360deg)}
+        }
+        
+        
+        @keyframes myopacity {
+            50%{opacity: 0;}
+        }
+        
+        @keyframes myscale {
+            50%{transform: scale(0.1, 0.1);}
+        }
+        
+        
+        @keyframes mycolorchange {
+            20%{background-color: rgb(255, 119, 0);}
+            40%{background-color: rgb(48, 238, 0);}
+            60%{background-color: rgb(0, 251, 255);}
+            80%{background-color: rgb(255, 0, 238);}
+            100%{background-color: rgb(255, 0, 76);}
+        }
+        
+        
+        @keyframes mycolortextchange {
+            20%{color: rgb(255, 119, 0);}
+            40%{color: rgb(48, 238, 0);}
+            60%{color: rgb(0, 251, 255);}
+            80%{color: rgb(255, 0, 238);}
+            100%{color: rgb(255, 0, 76);}
+        }
+        
+        
+        
+        .size {
+            font-size: 32px;
+        }</style>
         <title>animation</title>
         <link rel="stylesheet" href="animation-css.css">
 
